@@ -50,18 +50,18 @@ const Features = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto auto-rows-fr">
-          {/* Feature 1 - Large tile spanning 2 columns and 2 rows */}
-          <div className="md:col-span-2 md:row-span-2 bg-gray-900/80 rounded-3xl p-8 border border-amber-500/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm">
-            <div className={`w-14 h-14 rounded-2xl ${features[0].color} flex items-center justify-center mb-6`}>
-              {React.createElement(features[0].icon, { size: 28, className: "text-black" })}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+          {/* Feature 1 - Now similar size to others */}
+          <div className="bg-gray-900/80 rounded-3xl p-6 md:p-8 border border-amber-500/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm h-full">
+            <div className={`w-12 h-12 rounded-2xl ${features[0].color} flex items-center justify-center mb-4`}>
+              {React.createElement(features[0].icon, { size: 24, className: "text-black" })}
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-white">{features[0].title}</h3>
-            <p className="text-gray-300 text-lg">{features[0].description}</p>
+            <h3 className="text-xl font-bold mb-2 text-white">{features[0].title}</h3>
+            <p className="text-gray-400">{features[0].description}</p>
           </div>
           
           {/* Feature 2 - Regular tile */}
-          <div className="md:col-span-2 bg-gray-900/70 rounded-3xl p-6 border border-amber-400/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm">
+          <div className="bg-gray-900/70 rounded-3xl p-6 md:p-8 border border-amber-400/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm h-full">
             <div className={`w-12 h-12 rounded-2xl ${features[1].color} flex items-center justify-center mb-4`}>
               {React.createElement(features[1].icon, { size: 24, className: "text-black" })}
             </div>
@@ -70,7 +70,7 @@ const Features = () => {
           </div>
           
           {/* Feature 3 - Regular tile */}
-          <div className="bg-gray-900/70 rounded-3xl p-6 border border-amber-300/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm">
+          <div className="bg-gray-900/70 rounded-3xl p-6 md:p-8 border border-amber-300/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm h-full">
             <div className={`w-12 h-12 rounded-2xl ${features[2].color} flex items-center justify-center mb-4`}>
               {React.createElement(features[2].icon, { size: 24, className: "text-black" })}
             </div>
@@ -78,8 +78,8 @@ const Features = () => {
             <p className="text-gray-400">{features[2].description}</p>
           </div>
           
-          {/* Feature 4 - Regular tile that spans 2 columns */}
-          <div className="md:col-span-2 bg-gray-900/70 rounded-3xl p-6 border border-amber-200/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm">
+          {/* Feature 4 - Regular tile */}
+          <div className="bg-gray-900/70 rounded-3xl p-6 md:p-8 border border-amber-200/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm h-full">
             <div className={`w-12 h-12 rounded-2xl ${features[3].color} flex items-center justify-center mb-4`}>
               {React.createElement(features[3].icon, { size: 24, className: "text-black" })}
             </div>
