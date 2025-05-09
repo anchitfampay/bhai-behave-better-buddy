@@ -25,7 +25,7 @@ const Navbar = () => {
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#how-it-works" className="text-white hover:text-gray-300 font-medium transition-colors font-poppins">How it Works?</a>
+          <a href="#features" className="text-white hover:text-gray-300 font-medium transition-colors font-poppins">How it Works?</a>
           
           <Button 
             className="bg-white hover:bg-amber-500 text-black font-semibold px-6 py-2 rounded-lg ml-4 transition-colors font-poppins"
