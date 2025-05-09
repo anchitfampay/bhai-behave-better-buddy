@@ -16,7 +16,7 @@ const Hero = () => {
         {/* Character image with white border */}
         <div className="relative w-48 h-48 mx-auto mb-8">
           <img 
-            src="/lovable-uploads/efd04eea-709d-4ce3-942b-146e0888cd38.png" 
+            src="/lovable-uploads/ded7a9a5-6840-44fa-821d-dc5d3036fd2a.png" 
             alt="Brutally Honest AI Character" 
             className="w-full h-full object-cover rounded-full border-4 border-white"
           />
