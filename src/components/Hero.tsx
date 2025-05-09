@@ -1,75 +1,81 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Zap } from 'lucide-react';
+import { Zap, AlertTriangle } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden relative">
+    <section className="pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden relative bg-white">
       <div className="absolute inset-0 z-0">
-        {/* Neural spire background effects */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-full bg-gradient-to-b from-transparent via-blue-500/30 to-transparent"></div>
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 transform translate-x-20 w-[1px] h-3/4 bg-gradient-to-b from-transparent via-ice-blue/20 to-transparent"></div>
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 transform -translate-x-20 w-[1px] h-3/4 bg-gradient-to-b from-transparent via-pulse-violet/20 to-transparent"></div>
-        
-        <div className="absolute top-20 left-1/3 w-64 h-64 rounded-full bg-blue-500/5 blur-[100px]"></div>
-        <div className="absolute bottom-20 right-1/3 w-80 h-80 rounded-full bg-indigo-500/5 blur-[100px]"></div>
+        {/* Desi Pop background elements */}
+        <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-[#FF4D4D]/10"></div>
+        <div className="absolute bottom-20 right-10 w-40 h-40 rounded-full bg-[#3CDFFF]/10"></div>
+        <div className="absolute top-1/3 right-1/4 w-24 h-24 rounded-full bg-[#FFA726]/10"></div>
       </div>
       
       <div className="container px-4 md:px-6 relative z-10">
         <div className="text-center max-w-5xl mx-auto">
-          <div className="inline-flex items-center px-3 py-1 rounded-full bg-foreground/5 text-blue-400 text-xs font-medium border border-blue-500/20 mb-6">
-            <Zap size={12} className="mr-2" />
-            <span>TRUTH INTEGRATION ACTIVATED</span>
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-[#FF4D4D]/10 text-[#FF4D4D] text-sm font-bold border-2 border-[#FF4D4D] mb-6">
+            <Zap size={16} className="mr-2" />
+            <span>FINALLY AN APP WITH ATTITUDE</span>
           </div>
           
-          <h1 className="font-black tracking-tight text-5xl md:text-7xl lg:text-8xl mb-4 relative">
-            <span className="gradient-text">Yo Bh.ai</span>
+          <h1 className="font-black tracking-tight text-5xl md:text-7xl lg:text-8xl mb-4 text-gray-800">
+            Yo <span className="text-[#FF4D4D]">Bh.ai</span>
           </h1>
           
-          <h2 className="text-lg md:text-2xl font-medium mb-10 max-w-3xl mx-auto text-foreground/80">
-            your own brutally honest AI that breaks bad digital habits with real-time interventions
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-800">
+            Your Phone Finally Has The Balls To Call You Out
           </h2>
           
+          <p className="text-lg md:text-xl mb-10 max-w-3xl mx-auto text-gray-600">
+            Your Own Brutally Honest AI that breaks bad digital habits with real-time interventions in Hindi slang that somehow works better than any mindfulness app.
+          </p>
+          
           <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
-            <Button className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold shadow-lg shadow-blue-500/25 py-6 px-8 font-bold relative">
-              <span className="relative z-10">Access Neural Link</span>
+            <Button className="bg-[#FF4D4D] hover:bg-[#FF2525] text-white font-bold text-lg px-8 py-6 rounded-full border-4 border-white shadow-lg">
+              <span className="relative z-10">Get Your Digital Reality Check</span>
             </Button>
           </div>
           
           <div className="relative mt-20 w-full max-w-5xl mx-auto">
-            <div className="relative w-full aspect-[16/9] bg-gradient-to-br from-blue-900/20 to-indigo-900/10 rounded-xl overflow-hidden border border-blue-500/20">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="relative h-32">
-                    <div className="w-1 h-32 bg-gradient-to-t from-blue-400/30 to-indigo-500/30 mx-auto"></div>
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-blue-400 rounded-full blur-sm"></div>
+            <div className="bg-white rounded-3xl border-4 border-gray-200 p-6 shadow-2xl overflow-hidden">
+              <div className="flex space-x-2 mb-4">
+                <div className="w-3 h-3 rounded-full bg-[#FF4D4D]"></div>
+                <div className="w-3 h-3 rounded-full bg-[#FFA726]"></div>
+                <div className="w-3 h-3 rounded-full bg-[#4CAF50]"></div>
+              </div>
+              
+              <div className="relative rounded-2xl bg-gray-100 p-8 mb-6">
+                <div className="absolute top-4 right-4 bg-[#FF4D4D] text-white px-3 py-1 rounded-full text-sm font-bold flex items-center">
+                  <AlertTriangle size={14} className="mr-1" />
+                  REALITY CHECK
+                </div>
+                
+                <div className="flex justify-between items-start mt-8">
+                  <div className="bg-white p-4 rounded-xl shadow-md max-w-xs">
+                    <p className="text-gray-800 font-bold">Scrolling for 2 hours now...</p>
                   </div>
-                  <p className="mt-4 text-blue-400 font-medium">Neural Link Visualizer</p>
+                  
+                  <div className="bg-[#FF4D4D] p-4 rounded-xl shadow-md max-w-xs text-white">
+                    <p className="font-bold">Abhi bhi jaga hua hai bkl?</p>
+                    <p className="text-sm mt-1">2:34 AM</p>
+                  </div>
                 </div>
               </div>
               
-              {/* UI Overlay elements */}
-              <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
-                <div className="flex space-x-1.5">
-                  <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
-                  <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
-                  <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-gray-100 p-4 rounded-xl">
+                  <p className="text-sm text-gray-500 mb-1">USAGE PATTERN</p>
+                  <p className="text-2xl font-bold text-gray-800">-37%</p>
+                  <p className="text-xs text-gray-600">Bad habits in 2 weeks</p>
                 </div>
-                <div className="h-6 w-32 bg-blue-900/30 rounded-md border border-blue-500/20"></div>
-              </div>
-              
-              {/* Floating UI elements */}
-              <div className="absolute bottom-8 left-8 w-48 bg-card/40 backdrop-blur-md p-3 rounded-lg border border-blue-500/20">
-                <div className="text-xs text-blue-400 mb-1">USAGE PATTERN</div>
-                <div className="text-2xl font-bold">10.5%</div>
-                <div className="text-xs text-foreground/60">Digital intervention effective</div>
-              </div>
-              
-              <div className="absolute bottom-8 right-8 w-48 bg-card/40 backdrop-blur-md p-3 rounded-lg border border-blue-500/20">
-                <div className="text-xs text-indigo-400 mb-1">NEURAL ALERTS</div>
-                <div className="text-2xl font-bold">35.8K</div>
-                <div className="text-xs text-foreground/60">Reality checks delivered</div>
+                
+                <div className="bg-gray-100 p-4 rounded-xl">
+                  <p className="text-sm text-gray-500 mb-1">REALITY CHECKS</p>
+                  <p className="text-2xl font-bold text-gray-800">42%</p>
+                  <p className="text-xs text-gray-600">More productive focus time</p>
+                </div>
               </div>
             </div>
           </div>
