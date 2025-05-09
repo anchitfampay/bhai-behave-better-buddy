@@ -3,19 +3,15 @@ import React from 'react';
 
 const Features = () => {
   const features = [{
-    title: "Dynamic Wallpapers",
-    description: "Order junk food? Your wallpaper shows your growing belly. Money hits your account? \"Ameeri bc!\" takes over your screen.",
-    color: "bg-gray-800/60",
-    borderColor: "border-gray-700",
-    textColor: "text-white"
-  }, {
-    title: "App Monitoring That Matters",
-    description: "Social, food delivery, shopping – we watch where you're weakest.",
+    title: "Hindi Slangs on Dynamic Nudges",
+    description: "When you're doom-scrolling at 3AM, YoBh.ai doesn't "suggest" better habits. It says "Band kar ke so ja chutiye" – and somehow, it works.",
     color: "bg-gray-800/60",
     borderColor: "border-gray-700",
     textColor: "text-white"
   }];
-  return <section id="features" className="py-32 relative overflow-hidden bg-black">
+
+  return (
+    <section id="features" className="py-32 relative overflow-hidden bg-black">
       <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-gray-900/20 pointer-events-none"></div>
       
       <div className="container px-4 md:px-6 relative z-10 mx-auto">
@@ -34,11 +30,11 @@ const Features = () => {
           />
         </div>
         
-        {/* Combined section for Hindi Slang and Positive Reinforcement */}
+        {/* Single feature card for Hindi Slangs */}
         <div className="rounded-3xl p-8 border border-gray-800/50 shadow-lg backdrop-blur-xl bg-gray-900/60 mb-16 max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="space-y-6">
-              <h3 className="text-3xl font-bold text-white">Hindi Slang + Positive Reinforcement</h3>
+              <h3 className="text-3xl font-bold text-white">Hindi Slangs on Dynamic Nudges</h3>
               <p className="text-lg text-gray-300">
                 Choose Standard for straightforward nudges or Extreme for the full desi roommate experience. Complete a workout? Receive money? We celebrate wins with the same energy we roast your fails.
               </p>
@@ -52,19 +48,9 @@ const Features = () => {
             </div>
           </div>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
-          {features.map((feature, index) => (
-            <div 
-              key={index}
-              className="rounded-3xl p-6 md:p-8 border border-gray-800/50 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-xl bg-gray-900/60 h-full"
-            >
-              <div className={`w-16 h-16 rounded-2xl ${feature.color} mb-6 mx-auto`}></div>
-              <h3 className="text-2xl font-bold text-white text-center">{feature.title}</h3>
-            </div>
-          ))}
-        </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Features;
