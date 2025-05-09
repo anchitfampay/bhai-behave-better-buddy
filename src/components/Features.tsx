@@ -39,33 +39,15 @@ const Features = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
-          {/* Feature 1 */}
-          <div className="rounded-3xl p-6 md:p-8 border border-amber-500/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm h-full bg-stone-900">
-            <div className={`w-12 h-12 rounded-2xl ${features[0].color} mb-4`}></div>
-            <h3 className="text-xl font-bold mb-2 text-white">{features[0].title}</h3>
-            <p className="text-gray-400">{features[0].description}</p>
-          </div>
-          
-          {/* Feature 2 - Updated to match first card */}
-          <div className="rounded-3xl p-6 md:p-8 border border-amber-400/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm h-full bg-stone-900">
-            <div className={`w-12 h-12 rounded-2xl ${features[1].color} mb-4`}></div>
-            <h3 className="text-xl font-bold mb-2 text-white">{features[1].title}</h3>
-            <p className="text-gray-400">{features[1].description}</p>
-          </div>
-          
-          {/* Feature 3 - Updated to match first card */}
-          <div className="rounded-3xl p-6 md:p-8 border border-amber-300/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm h-full bg-stone-900">
-            <div className={`w-12 h-12 rounded-2xl ${features[2].color} mb-4`}></div>
-            <h3 className="text-xl font-bold mb-2 text-white">{features[2].title}</h3>
-            <p className="text-gray-400">{features[2].description}</p>
-          </div>
-          
-          {/* Feature 4 - Updated to match first card */}
-          <div className="rounded-3xl p-6 md:p-8 border border-amber-200/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm h-full bg-stone-900">
-            <div className={`w-12 h-12 rounded-2xl ${features[3].color} mb-4`}></div>
-            <h3 className="text-xl font-bold mb-2 text-white">{features[3].title}</h3>
-            <p className="text-gray-400">{features[3].description}</p>
-          </div>
+          {features.map((feature, index) => (
+            <div 
+              key={index}
+              className="rounded-3xl p-6 md:p-8 border border-amber-500/10 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-xl bg-stone-900/60 h-full"
+            >
+              <div className={`w-16 h-16 rounded-2xl ${feature.color} mb-6 mx-auto`}></div>
+              <h3 className="text-2xl font-bold text-white text-center">{feature.title}</h3>
+            </div>
+          ))}
         </div>
       </div>
     </section>;
