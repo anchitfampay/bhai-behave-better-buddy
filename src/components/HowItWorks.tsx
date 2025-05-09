@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Download, Settings2, Target, Zap } from "lucide-react";
@@ -27,9 +28,7 @@ const HowItWorks = () => {
     description: "Turns out, brutal honesty works better than gentle reminders.",
     color: "from-amber-200 to-amber-300"
   }];
-  return <section id="how-it-works" className="py-24 relative bg-gray-900">
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black pointer-events-none"></div>
-      
+  return <section id="how-it-works" className="py-24 relative bg-black">
       <div className="container px-4 md:px-6 relative z-10 py-0">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-black mb-4 text-white md:text-5xl">Brutally <span className="text-amber-500">Simple</span></h2>
