@@ -47,9 +47,9 @@ const HowItWorks = () => {
           </p>
         </div>
         
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+        <div className="flex flex-col md:flex-row flex-wrap max-w-6xl mx-auto">
           {steps.map((step, index) => (
-            <div key={index} className="flex flex-col items-center text-center relative group">
+            <div key={index} className="flex flex-col items-center text-center relative group w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
               <div className={`w-20 h-20 rounded-full bg-black border-4 border-amber-500 flex items-center justify-center mb-6 relative overflow-hidden shadow-lg`}>
                 <span className="absolute -top-2 -right-2 bg-amber-500 px-2 py-0.5 text-xs rounded-full text-black font-bold">{step.number}</span>
                 <step.icon size={32} className="text-amber-500" />
