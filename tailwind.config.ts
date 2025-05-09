@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -53,15 +54,15 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				bhai: {
-					purple: {
-						light: "#A78BFA",
-						DEFAULT: "#8B5CF6", 
-						dark: "#7C3AED"
+					blue: {
+						light: "#93c5fd",
+						DEFAULT: "#3b82f6", 
+						dark: "#2563eb"
 					},
-					orange: {
-						light: "#FDBA74",
-						DEFAULT: "#F97316",
-						dark: "#EA580C"
+					indigo: {
+						light: "#a5b4fc",
+						DEFAULT: "#6366f1",
+						dark: "#4f46e5"
 					}
 				},
 				sidebar: {
@@ -74,9 +75,9 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// New Neural Spire Colors
+				// New Neural Spire Colors - Updated for Blue Theme
 				"void-black": 'hsl(var(--void-black))',
-				"pulse-violet": 'hsl(var(--pulse-violet))',
+				"pulse-blue": 'hsl(var(--pulse-blue))',
 				"ice-blue": 'hsl(var(--ice-blue))',
 				"transparent-white": 'hsl(var(--transparent-white))'
 			},
