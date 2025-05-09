@@ -4,10 +4,10 @@ import React from 'react';
 const Features = () => {
   return (
     <section id="features" className="py-32 relative overflow-hidden bg-black">
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-gray-900/20 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-black pointer-events-none"></div>
       
-      <div className="container px-4 md:px-6 relative z-10 mx-auto">
-        <div className="text-center mb-24">
+      <div className="container px-4 md:px-6 relative z-10 mx-auto bg-black">
+        <div className="text-center mb-24 bg-black">
           <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tight text-white">Not Your <span className="text-amber-500">Gentle</span> Reminder App</h2>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
             When you&apos;re doom-scrolling at 3AM, YoBh.ai doesn&apos;t &quot;suggest&quot; better habits. It says &quot;Band kar ke so ja chutiye&quot; – and somehow, it works.
@@ -15,7 +15,7 @@ const Features = () => {
         </div>
         
         {/* Feature cards stacked vertically */}
-        <div className="flex flex-col gap-16 max-w-6xl mx-auto">
+        <div className="flex flex-col gap-16 max-w-6xl mx-auto bg-black">
           {/* First bento: Unfiltered and shameful - text on left, image on right */}
           <div className="rounded-3xl p-8 border border-gray-800/50 shadow-lg backdrop-blur-xl bg-gray-900/60">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
