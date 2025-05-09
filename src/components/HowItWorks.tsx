@@ -1,8 +1,6 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Download, Settings2, Target, Zap } from "lucide-react";
-
 const HowItWorks = () => {
   const steps = [{
     number: "01",
@@ -29,7 +27,6 @@ const HowItWorks = () => {
     description: "Turns out, brutal honesty works better than gentle reminders.",
     color: "from-amber-200 to-amber-300"
   }];
-
   return <section id="how-it-works" className="py-24 relative bg-black">
       <div className="container px-4 md:px-6 relative z-10 py-0">
         <div className="text-center mb-16">
@@ -37,20 +34,7 @@ const HowItWorks = () => {
         </div>
         
         <div className="flex flex-col md:flex-row flex-wrap max-w-6xl mx-auto">
-          {steps.map((step, index) => (
-            <div key={index} className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
-              <div className="h-full flex flex-col items-center text-center">
-                <div className={`w-16 h-16 rounded-full mb-4 flex items-center justify-center bg-gradient-to-b ${step.color}`}>
-                  {React.createElement(step.icon, {
-                    size: 24,
-                    className: "text-black"
-                  })}
-                </div>
-                <h3 className="text-xl font-bold mb-2 text-amber-500">{step.title}</h3>
-                <p className="text-gray-400 mb-2">{step.description}</p>
-              </div>
-            </div>
-          ))}
+          {steps.map((step, index) => {})}
         </div>
         
         <div className="mt-16 text-center my-0">
@@ -61,5 +45,4 @@ const HowItWorks = () => {
       </div>
     </section>;
 };
-
 export default HowItWorks;
