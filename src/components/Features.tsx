@@ -1,21 +1,40 @@
 
-import React from 'react';
+import React, { useState } from 'react';
+import { Button } from "@/components/ui/button";
+import { ChevronDown } from "lucide-react";
 
 const Features = () => {
+  const [showBentos, setShowBentos] = useState(false);
+
+  const toggleBentos = () => {
+    setShowBentos(!showBentos);
+  };
+
   return (
-    <section id="features" className="py-32 relative overflow-hidden bg-black">
+    <section id="features" className="py-16 md:py-24 min-h-screen flex flex-col justify-center relative overflow-hidden bg-black">
       <div className="absolute inset-0 bg-black pointer-events-none"></div>
       
-      <div className="container px-4 md:px-6 relative z-10 mx-auto bg-black">
-        <div className="text-center mb-24 bg-black">
-          <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tight text-white">Not Your <span className="text-amber-500">Gentle</span> Reminder App</h2>
-          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-            When you&apos;re doom-scrolling at 3AM, YoBh.ai doesn&apos;t &quot;suggest&quot; better habits. It says &quot;Band kar ke so ja chutiye&quot; – and somehow, it works.
+      <div className="container px-4 md:px-6 relative z-10 mx-auto bg-black flex flex-col h-full">
+        <div className="text-center mb-8 flex-grow flex flex-col justify-center items-center bg-black py-16">
+          <h2 className="text-5xl md:text-7xl font-black mb-8 tracking-tight text-white leading-tight">
+            Not Your <span className="text-amber-500">Gentle</span> Reminder App
+          </h2>
+          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12">
+            When you&apos;re doom-scrolling at 3AM, YoBh.ai doesn&apos;t &quot;suggest&quot; better habits. 
+            It says &quot;Band kar ke so ja chutiye&quot; – and somehow, it works.
           </p>
+          
+          <Button
+            onClick={toggleBentos}
+            variant="ghost"
+            className="flex items-center gap-2 text-amber-500 hover:text-amber-400 hover:bg-transparent mt-8"
+          >
+            See Features <ChevronDown className={`transition-transform duration-300 ${showBentos ? 'rotate-180' : ''}`} />
+          </Button>
         </div>
         
-        {/* Feature cards stacked vertically */}
-        <div className="flex flex-col gap-16 max-w-6xl mx-auto bg-black">
+        {/* Feature cards stacked vertically - only shown when toggled */}
+        <div className={`flex flex-col gap-16 max-w-6xl mx-auto bg-black transition-all duration-500 ease-in-out ${showBentos ? 'opacity-100 max-h-[2000px]' : 'opacity-0 max-h-0 overflow-hidden'}`}>
           {/* First bento: Unfiltered and shameful - text on left, image on right */}
           <div className="rounded-3xl p-8 border border-gray-800/50 shadow-lg backdrop-blur-xl bg-gray-900/60">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
