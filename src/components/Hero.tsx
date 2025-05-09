@@ -5,45 +5,50 @@ import { Zap } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="pt-40 pb-28 md:pt-52 md:pb-40 overflow-hidden relative">
-      <div className="absolute inset-0 z-0 opacity-30">
-        <div className="absolute inset-0 bg-gradient-to-b from-bhai-purple/10 to-transparent"></div>
-        <div className="absolute top-20 left-20 w-40 h-40 rounded-full bg-bhai-purple/20 blur-3xl"></div>
-        <div className="absolute bottom-20 right-20 w-60 h-60 rounded-full bg-bhai-orange/20 blur-3xl"></div>
+    <section className="pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden relative">
+      <div className="absolute inset-0 z-0">
+        {/* Neural spire background effects */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-full bg-gradient-to-b from-transparent via-pulse-violet/30 to-transparent"></div>
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 transform translate-x-20 w-[1px] h-3/4 bg-gradient-to-b from-transparent via-ice-blue/20 to-transparent"></div>
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 transform -translate-x-20 w-[1px] h-3/4 bg-gradient-to-b from-transparent via-pulse-violet/20 to-transparent"></div>
+        
+        <div className="absolute top-20 left-1/3 w-32 h-32 rounded-full bg-pulse-violet/5 blur-3xl"></div>
+        <div className="absolute bottom-20 right-1/3 w-48 h-48 rounded-full bg-ice-blue/5 blur-3xl"></div>
       </div>
       
       <div className="container px-4 md:px-6 relative z-10">
-        <div className="text-center max-w-4xl mx-auto">
-          <h1 className="font-black tracking-tight text-5xl md:text-7xl mb-6">
+        <div className="text-center max-w-3xl mx-auto">
+          <h1 className="font-black tracking-tight text-5xl md:text-7xl mb-4 relative">
             <span className="gradient-text">Bh.ai</span>
           </h1>
           
-          <h2 className="text-3xl md:text-5xl font-bold mb-12 max-w-3xl mx-auto">
-            Your Digital Reality Check.
+          <h2 className="text-2xl md:text-3xl font-bold mb-10 max-w-xl mx-auto">
+            Neural Intervention
           </h2>
           
-          <div className="flex flex-col sm:flex-row justify-center gap-6 mb-20">
-            <Button className="btn-gradient text-base py-7 px-10 font-bold relative overflow-hidden group text-lg">
-              <span className="relative z-10">Get Early Access</span>
-              <span className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+          <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
+            <Button className="btn-gradient py-6 px-8 font-bold relative overflow-hidden group text-lg prismatic-border">
+              <span className="relative z-10">Access Neural Link</span>
             </Button>
           </div>
           
-          <div className="relative h-[600px] w-full max-w-[400px] mx-auto perspective-1000">
-            <div className="absolute inset-0 bg-gradient-to-tr from-bhai-purple/30 to-bhai-orange/30 rounded-[40px] blur-3xl"></div>
-            <div className="relative h-full w-full bg-gradient-to-br from-background/80 to-background/60 backdrop-blur-md rounded-[30px] border border-white/10 shadow-xl overflow-hidden p-6 cyber-scan">
-              <div className="bg-gradient-to-br from-bhai-purple/10 to-bhai-purple/5 backdrop-blur-sm rounded-2xl p-5 mb-6 shadow-sm border border-bhai-purple/20 transform hover:scale-[1.02] transition-transform">
-                <div className="flex items-start gap-3">
-                  <div className="h-12 w-12 rounded-xl bg-bhai-purple flex items-center justify-center text-white relative">
-                    <Zap size={20} />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-sm">Bh.ai Alert</h4>
-                    <div className="text-sm text-foreground/90 font-medium mt-1 bg-bhai-purple/5 p-2 rounded-lg border border-bhai-purple/10">
-                      <p>Abhi bhi jaga hua hai? Subah pachtayega! 😴</p>
-                    </div>
-                  </div>
-                </div>
+          <div className="relative h-[500px] w-full max-w-[300px] mx-auto perspective-1000">
+            {/* Crystalline spire visualization */}
+            <div className="spire-container">
+              <div className="spire"></div>
+              
+              <div className="absolute bottom-1/4 left-1/2 -translate-x-1/2 transform -translate-y-1/2 w-5 h-5 bg-pulse-violet rounded-full blur-sm animate-pulse"></div>
+              
+              <div className="absolute bottom-2/4 left-1/2 -translate-x-1/2 transform -translate-y-1/2 w-4 h-4 bg-ice-blue rounded-full blur-sm animate-pulse" style={{animationDelay: "1s"}}></div>
+              
+              <div className="absolute bottom-3/4 left-1/2 -translate-x-1/2 transform -translate-y-1/2 w-3 h-3 bg-pulse-violet rounded-full blur-sm animate-pulse" style={{animationDelay: "2s"}}></div>
+            </div>
+            
+            {/* Neural message example floating above spire */}
+            <div className="absolute top-10 left-1/2 -translate-x-1/2 w-64 crystal-glow">
+              <div className="bg-card/80 backdrop-blur-md border border-pulse-violet/20 p-4 rounded-lg data-pulse">
+                <p className="text-ice-blue text-sm font-semibold">Neural Alert</p>
+                <p className="text-foreground/90 text-xs mt-1">Mind your time.</p>
               </div>
             </div>
           </div>

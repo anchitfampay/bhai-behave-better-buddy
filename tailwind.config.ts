@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -74,7 +73,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// New Neural Spire Colors
+				"void-black": 'hsl(var(--void-black))',
+				"pulse-violet": 'hsl(var(--pulse-violet))',
+				"ice-blue": 'hsl(var(--ice-blue))',
+				"transparent-white": 'hsl(var(--transparent-white))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
