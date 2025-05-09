@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Download, Settings2, Target, Zap } from "lucide-react";
@@ -35,15 +34,7 @@ const HowItWorks = () => {
         </div>
         
         <div className="flex flex-col md:flex-row flex-wrap max-w-6xl mx-auto">
-          {steps.map((step, index) => (
-            <div key={index} className="w-full md:w-1/2 lg:w-1/4 p-4 text-center">
-              <div className={`bg-gradient-to-b ${step.color} rounded-3xl p-6 h-full backdrop-blur-xl bg-opacity-20 border border-amber-500/10`}>
-                <div className="text-lg font-bold mb-2 text-white">{step.number}</div>
-                <h3 className="text-xl font-bold mb-2 text-white">{step.title}</h3>
-                <p className="text-gray-300 text-sm">{step.description}</p>
-              </div>
-            </div>
-          ))}
+          {steps.map((step, index) => {})}
         </div>
         
         <div className="mt-10 text-center my-0">
