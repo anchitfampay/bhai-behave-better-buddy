@@ -49,8 +49,8 @@ const HowItWorks = () => {
         
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, index) => (
-            <div key={index} className="flex flex-col items-center text-center relative crystal-edge">
-              <div className={`w-16 h-16 rounded-lg bg-gradient-to-br ${step.color} border border-pulse-violet/10 flex items-center justify-center mb-6 relative group crystal-glow`}>
+            <div key={index} className="flex flex-col items-center text-center relative">
+              <div className={`w-16 h-16 rounded-lg bg-gradient-to-br ${step.color} border border-pulse-violet/10 flex items-center justify-center mb-6 relative`}>
                 <span className="absolute -top-2 -right-2 bg-card px-2 py-0.5 text-xs rounded-full border border-pulse-violet/30">{step.number}</span>
                 <step.icon size={28} className="text-foreground" />
               </div>
@@ -67,7 +67,7 @@ const HowItWorks = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <Button className="btn-gradient px-8 py-5 text-lg font-bold relative overflow-hidden group prismatic-border">
+          <Button className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold shadow-lg shadow-blue-500/25 px-8 py-5 text-lg font-bold relative">
             <span className="relative z-10">Access Neural Link</span>
           </Button>
         </div>

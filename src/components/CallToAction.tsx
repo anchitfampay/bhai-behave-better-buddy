@@ -39,7 +39,7 @@ const CallToAction = () => {
       <div className="absolute top-0 right-1/4 w-[1px] h-full bg-gradient-to-b from-transparent via-ice-blue/10 to-transparent"></div>
       
       <div className="container px-4 md:px-6 relative z-10">
-        <div className="bg-card/20 backdrop-blur-md rounded-2xl p-8 md:p-12 border border-pulse-violet/10 relative overflow-hidden prismatic-border data-pulse">
+        <div className="bg-card/20 backdrop-blur-md rounded-2xl p-8 md:p-12 border border-pulse-violet/10 relative overflow-hidden">
           <div className="max-w-2xl mx-auto text-center relative z-10">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-foreground/5 text-foreground/70 text-xs font-medium border border-pulse-violet/20 mb-6 gap-2">
               <Zap size={12} className="text-pulse-violet" />
@@ -56,7 +56,7 @@ const CallToAction = () => {
                 className="flex-grow h-12 bg-background/20 backdrop-blur-sm border-pulse-violet/20 placeholder:text-foreground/40"
                 required
               />
-              <Button type="submit" className="btn-gradient h-12 px-6 font-bold">
+              <Button type="submit" className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold shadow-lg h-12 px-6 font-bold">
                 Connect
               </Button>
             </form>

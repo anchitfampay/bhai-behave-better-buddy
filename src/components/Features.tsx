@@ -57,9 +57,9 @@ const Features = () => {
           {features.map((feature, index) => (
             <div 
               key={index} 
-              className="flex flex-col items-center text-center group"
+              className="flex flex-col items-center text-center"
             >
-              <div className={`relative w-20 h-20 rounded-xl ${feature.color} ${feature.borderColor} border backdrop-blur-sm flex items-center justify-center mb-8 transition-transform duration-500 group-hover:scale-110 shadow-lg shadow-blue-900/10`}>
+              <div className={`relative w-20 h-20 rounded-xl ${feature.color} ${feature.borderColor} border backdrop-blur-sm flex items-center justify-center mb-8 shadow-lg shadow-blue-900/10`}>
                 <feature.icon className={`${feature.textColor}`} size={32} />
               </div>
               <h3 className="text-2xl font-bold mb-3 tracking-tight">{feature.title}</h3>

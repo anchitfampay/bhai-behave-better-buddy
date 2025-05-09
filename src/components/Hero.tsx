@@ -32,7 +32,7 @@ const Hero = () => {
           </h2>
           
           <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
-            <Button className="btn-gradient py-6 px-8 font-bold relative overflow-hidden group text-lg prismatic-border">
+            <Button className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold shadow-lg shadow-blue-500/25 py-6 px-8 font-bold relative">
               <span className="relative z-10">Access Neural Link</span>
             </Button>
           </div>
@@ -43,7 +43,7 @@ const Hero = () => {
                 <div className="text-center">
                   <div className="relative h-32">
                     <div className="w-1 h-32 bg-gradient-to-t from-blue-400/30 to-indigo-500/30 mx-auto"></div>
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-blue-400 rounded-full blur-sm animate-pulse"></div>
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-blue-400 rounded-full blur-sm"></div>
                   </div>
                   <p className="mt-4 text-blue-400 font-medium">Neural Link Visualizer</p>
                 </div>
