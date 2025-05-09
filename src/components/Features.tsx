@@ -14,14 +14,6 @@ const Features = () => {
           </p>
         </div>
         
-        <div className="flex justify-center mb-16">
-          <img 
-            src="/public/lovable-uploads/e6f4b622-2bd0-4b50-9ddb-da5493ed1610.png" 
-            alt="Mukkad Saala" 
-            className="w-48 h-48 object-contain"
-          />
-        </div>
-        
         {/* Feature cards stacked vertically */}
         <div className="flex flex-col gap-16 max-w-6xl mx-auto">
           {/* First bento: Unfiltered and shameful - text on left, image on right */}
