@@ -8,42 +8,44 @@ const Features = () => {
       title: "Unfiltered Hindi Slang",
       description: "Choose Standard for straightforward nudges or Extreme for the full desi roommate experience.",
       icon: MessageCircle,
-      color: "bg-[#FF4D4D]",
-      borderColor: "border-[#FF4D4D]",
-      textColor: "text-[#FF4D4D]"
+      color: "bg-amber-500",
+      borderColor: "border-amber-500",
+      textColor: "text-amber-500"
     },
     {
       title: "Dynamic Wallpapers",
       description: "Order junk food? Your wallpaper shows your growing belly. Money hits your account? \"Ameeri bc!\" takes over your screen.",
       icon: Image,
-      color: "bg-[#3CDFFF]",
-      borderColor: "border-[#3CDFFF]",
-      textColor: "text-[#3CDFFF]"
+      color: "bg-amber-400",
+      borderColor: "border-amber-400",
+      textColor: "text-amber-400"
     },
     {
       title: "App Monitoring That Matters",
       description: "Social, food delivery, shopping – we watch where you're weakest.",
       icon: BarChart,
-      color: "bg-[#FFA726]",
-      borderColor: "border-[#FFA726]",
-      textColor: "text-[#FFA726]"
+      color: "bg-amber-300",
+      borderColor: "border-amber-300",
+      textColor: "text-amber-300"
     },
     {
       title: "Positive Reinforcement",
       description: "Complete a workout? Receive money? We celebrate wins with the same energy we roast your fails.",
       icon: Star,
-      color: "bg-[#4CAF50]",
-      borderColor: "border-[#4CAF50]",
-      textColor: "text-[#4CAF50]"
+      color: "bg-amber-200",
+      borderColor: "border-amber-200",
+      textColor: "text-amber-200"
     }
   ];
 
   return (
-    <section id="features" className="py-32 relative overflow-hidden bg-white">
+    <section id="features" className="py-32 relative overflow-hidden bg-black">
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-amber-950/20 pointer-events-none"></div>
+      
       <div className="container px-4 md:px-6 relative z-10 mx-auto">
         <div className="text-center mb-24">
-          <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tight text-gray-800">Not Your <span className="text-[#FF4D4D]">Gentle</span> Reminder App</h2>
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tight text-white">Not Your <span className="text-amber-500">Gentle</span> Reminder App</h2>
+          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
             When you're doom-scrolling at 3AM, YoBh.ai doesn't "suggest" better habits. It says "Band kar ke so ja chutiye" – and somehow, it works.
           </p>
         </div>
@@ -52,14 +54,13 @@ const Features = () => {
           {features.map((feature, index) => (
             <div 
               key={index} 
-              className="flex flex-col items-center text-center bg-white rounded-2xl p-6 border-4 border-white shadow-lg hover:-translate-y-1 transition-transform"
-              style={{ boxShadow: `0 10px 25px -5px ${feature.color.replace('bg-', '').replace('[', '').replace(']', '')}30` }}
+              className="flex flex-col items-center text-center bg-gray-900/70 rounded-2xl p-6 border border-gray-800 shadow-lg hover:-translate-y-1 transition-transform"
             >
-              <div className={`relative w-20 h-20 rounded-full ${feature.color} flex items-center justify-center mb-8 border-4 border-white`}>
-                <feature.icon className="text-white" size={32} />
+              <div className={`relative w-16 h-16 rounded-full ${feature.color} flex items-center justify-center mb-8 border-2 border-black`}>
+                <feature.icon className="text-black" size={24} />
               </div>
-              <h3 className="text-2xl font-bold mb-3 tracking-tight text-gray-800">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <h3 className="text-2xl font-bold mb-3 tracking-tight text-white">{feature.title}</h3>
+              <p className="text-gray-400">{feature.description}</p>
             </div>
           ))}
         </div>
