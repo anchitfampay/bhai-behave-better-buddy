@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { MessageCircle, Image, BarChart, Star } from 'lucide-react';
 const Features = () => {
@@ -42,7 +43,7 @@ const Features = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
-          {/* Feature 1 - Now similar size to others */}
+          {/* Feature 1 */}
           <div className="rounded-3xl p-6 md:p-8 border border-amber-500/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm h-full bg-stone-900">
             <div className={`w-12 h-12 rounded-2xl ${features[0].color} flex items-center justify-center mb-4`}>
               {React.createElement(features[0].icon, {
@@ -54,8 +55,8 @@ const Features = () => {
             <p className="text-gray-400">{features[0].description}</p>
           </div>
           
-          {/* Feature 2 - Regular tile */}
-          <div className="bg-gray-900/70 rounded-3xl p-6 md:p-8 border border-amber-400/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm h-full">
+          {/* Feature 2 - Updated to match first card */}
+          <div className="rounded-3xl p-6 md:p-8 border border-amber-400/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm h-full bg-stone-900">
             <div className={`w-12 h-12 rounded-2xl ${features[1].color} flex items-center justify-center mb-4`}>
               {React.createElement(features[1].icon, {
               size: 24,
@@ -66,8 +67,8 @@ const Features = () => {
             <p className="text-gray-400">{features[1].description}</p>
           </div>
           
-          {/* Feature 3 - Regular tile */}
-          <div className="bg-gray-900/70 rounded-3xl p-6 md:p-8 border border-amber-300/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm h-full">
+          {/* Feature 3 - Updated to match first card */}
+          <div className="rounded-3xl p-6 md:p-8 border border-amber-300/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm h-full bg-stone-900">
             <div className={`w-12 h-12 rounded-2xl ${features[2].color} flex items-center justify-center mb-4`}>
               {React.createElement(features[2].icon, {
               size: 24,
@@ -78,8 +79,8 @@ const Features = () => {
             <p className="text-gray-400">{features[2].description}</p>
           </div>
           
-          {/* Feature 4 - Regular tile */}
-          <div className="bg-gray-900/70 rounded-3xl p-6 md:p-8 border border-amber-200/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm h-full">
+          {/* Feature 4 - Updated to match first card */}
+          <div className="rounded-3xl p-6 md:p-8 border border-amber-200/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm h-full bg-stone-900">
             <div className={`w-12 h-12 rounded-2xl ${features[3].color} flex items-center justify-center mb-4`}>
               {React.createElement(features[3].icon, {
               size: 24,
