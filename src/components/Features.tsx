@@ -4,7 +4,7 @@ import React from 'react';
 const Features = () => {
   const features = [{
     title: "Hindi Slangs on Dynamic Nudges",
-    description: "When you're doom-scrolling at 3AM, YoBh.ai doesn't "suggest" better habits. It says "Band kar ke so ja chutiye" – and somehow, it works.",
+    description: "When you're doom-scrolling at 3AM, YoBh.ai doesn't \"suggest\" better habits. It says \"Band kar ke so ja chutiye\" – and somehow, it works.",
     color: "bg-gray-800/60",
     borderColor: "border-gray-700",
     textColor: "text-white"
