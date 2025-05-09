@@ -1,21 +1,20 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from '@/hooks/use-toast';
 import { Zap, Download } from 'lucide-react';
-
 const CallToAction = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [email, setEmail] = React.useState('');
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email && email.includes('@')) {
       toast({
         title: "You're in line for tough love",
         description: "We'll notify you when your beta access is ready.",
-        duration: 5000,
+        duration: 5000
       });
       setEmail('');
     } else {
@@ -23,17 +22,15 @@ const CallToAction = () => {
         title: "Arre bhai",
         description: "Valid email de do yaar!",
         variant: "destructive",
-        duration: 5000,
+        duration: 5000
       });
     }
   };
-
-  return (
-    <section className="py-24 relative bg-black">
+  return <section className="py-24 relative bg-black">
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black to-amber-950/20 z-0"></div>
       
       <div className="container px-4 md:px-6 relative z-10">
-        <div className="bg-gray-900/70 rounded-3xl p-8 md:p-12 border border-gray-800 shadow-xl relative overflow-hidden">
+        <div className="rounded-3xl p-8 md:p-12 border border-gray-800 shadow-xl relative overflow-hidden bg-gray-950">
           <div className="absolute top-0 right-0 w-40 h-40 bg-amber-500/10 rounded-full translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 left-0 w-40 h-40 bg-amber-500/10 rounded-full -translate-x-1/2 translate-y-1/2"></div>
           
@@ -45,14 +42,7 @@ const CallToAction = () => {
             <h2 className="text-3xl md:text-4xl font-black mb-6 text-white">Ready For Some <span className="text-amber-500">Digital Tough Love?</span></h2>
             
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <Input
-                type="email"
-                placeholder="Your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="flex-grow h-12 bg-black/50 border-gray-700 text-white placeholder:text-gray-500 rounded-full px-5"
-                required
-              />
+              <Input type="email" placeholder="Your email" value={email} onChange={e => setEmail(e.target.value)} className="flex-grow h-12 bg-black/50 border-gray-700 text-white placeholder:text-gray-500 rounded-full px-5" required />
               <Button type="submit" className="bg-amber-500 hover:bg-amber-600 text-black font-bold h-12 px-6 rounded-full">
                 Download Beta
               </Button>
@@ -73,8 +63,6 @@ const CallToAction = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CallToAction;
