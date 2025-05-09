@@ -50,19 +50,42 @@ const Features = () => {
           </p>
         </div>
         
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
-          {features.map((feature, index) => (
-            <div 
-              key={index} 
-              className="flex flex-col items-center text-center bg-gray-900/70 rounded-2xl p-6 border border-gray-800 shadow-lg hover:-translate-y-1 transition-transform"
-            >
-              <div className={`relative w-16 h-16 rounded-full ${feature.color} flex items-center justify-center mb-8 border-2 border-black`}>
-                <feature.icon className="text-black" size={24} />
-              </div>
-              <h3 className="text-2xl font-bold mb-3 tracking-tight text-white">{feature.title}</h3>
-              <p className="text-gray-400">{feature.description}</p>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto auto-rows-fr">
+          {/* Feature 1 - Large tile spanning 2 columns and 2 rows */}
+          <div className="md:col-span-2 md:row-span-2 bg-gray-900/80 rounded-3xl p-8 border border-amber-500/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm">
+            <div className={`w-14 h-14 rounded-2xl ${features[0].color} flex items-center justify-center mb-6`}>
+              <features[0].icon className="text-black" size={28} />
             </div>
-          ))}
+            <h3 className="text-2xl font-bold mb-4 text-white">{features[0].title}</h3>
+            <p className="text-gray-300 text-lg">{features[0].description}</p>
+          </div>
+          
+          {/* Feature 2 - Regular tile */}
+          <div className="md:col-span-2 bg-gray-900/70 rounded-3xl p-6 border border-amber-400/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm">
+            <div className={`w-12 h-12 rounded-2xl ${features[1].color} flex items-center justify-center mb-4`}>
+              <features[1].icon className="text-black" size={24} />
+            </div>
+            <h3 className="text-xl font-bold mb-2 text-white">{features[1].title}</h3>
+            <p className="text-gray-400">{features[1].description}</p>
+          </div>
+          
+          {/* Feature 3 - Regular tile */}
+          <div className="bg-gray-900/70 rounded-3xl p-6 border border-amber-300/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm">
+            <div className={`w-12 h-12 rounded-2xl ${features[2].color} flex items-center justify-center mb-4`}>
+              <features[2].icon className="text-black" size={24} />
+            </div>
+            <h3 className="text-xl font-bold mb-2 text-white">{features[2].title}</h3>
+            <p className="text-gray-400">{features[2].description}</p>
+          </div>
+          
+          {/* Feature 4 - Regular tile that spans 2 columns */}
+          <div className="md:col-span-2 bg-gray-900/70 rounded-3xl p-6 border border-amber-200/20 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm">
+            <div className={`w-12 h-12 rounded-2xl ${features[3].color} flex items-center justify-center mb-4`}>
+              <features[3].icon className="text-black" size={24} />
+            </div>
+            <h3 className="text-xl font-bold mb-2 text-white">{features[3].title}</h3>
+            <p className="text-gray-400">{features[3].description}</p>
+          </div>
         </div>
       </div>
     </section>
