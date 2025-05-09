@@ -55,14 +55,14 @@ export default {
 				},
 				bhai: {
 					blue: {
-						light: "#93c5fd",
-						DEFAULT: "#3b82f6", 
-						dark: "#2563eb"
+						light: "#93c5fd", // blue-300
+						DEFAULT: "#3b82f6", // blue-500
+						dark: "#2563eb"    // blue-600
 					},
 					indigo: {
-						light: "#a5b4fc",
-						DEFAULT: "#6366f1",
-						dark: "#4f46e5"
+						light: "#a5b4fc", // indigo-300
+						DEFAULT: "#6366f1", // indigo-500
+						dark: "#4f46e5"    // indigo-600
 					}
 				},
 				sidebar: {
@@ -75,7 +75,7 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// New Neural Spire Colors - Updated for Blue Theme
+				// Neural Spire Colors - Updated for Blue Theme
 				"void-black": 'hsl(var(--void-black))',
 				"pulse-blue": 'hsl(var(--pulse-blue))',
 				"ice-blue": 'hsl(var(--ice-blue))',
@@ -110,13 +110,23 @@ export default {
 				'pulse-light': {
 					'0%, 100%': { opacity: '1' },
 					'50%': { opacity: '0.8' }
+				},
+				'data-flow': {
+					'0%': { left: '-100%' },
+					'100%': { left: '100%' }
+				},
+				'rotate-gradient': {
+					'0%': { transform: 'rotate(0deg)' },
+					'100%': { transform: 'rotate(360deg)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'float': 'float 5s ease-in-out infinite',
-				'pulse-light': 'pulse-light 2s ease-in-out infinite'
+				'pulse-light': 'pulse-light 2s ease-in-out infinite',
+				'data-flow': 'data-flow 3s linear infinite',
+				'rotate-gradient': 'rotate-gradient 6s linear infinite'
 			},
 			fontFamily: {
 				'poppins': ['Poppins', 'sans-serif'],
