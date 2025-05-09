@@ -1,8 +1,12 @@
-
 import React from 'react';
-
 const Features = () => {
   const features = [{
+    title: "Unfiltered Hindi Slang",
+    description: "Choose Standard for straightforward nudges or Extreme for the full desi roommate experience.",
+    color: "bg-gray-800/60",
+    borderColor: "border-gray-700",
+    textColor: "text-white"
+  }, {
     title: "Dynamic Wallpapers",
     description: "Order junk food? Your wallpaper shows your growing belly. Money hits your account? \"Ameeri bc!\" takes over your screen.",
     color: "bg-gray-800/60",
@@ -11,6 +15,12 @@ const Features = () => {
   }, {
     title: "App Monitoring That Matters",
     description: "Social, food delivery, shopping – we watch where you're weakest.",
+    color: "bg-gray-800/60",
+    borderColor: "border-gray-700",
+    textColor: "text-white"
+  }, {
+    title: "Positive Reinforcement",
+    description: "Complete a workout? Receive money? We celebrate wins with the same energy we roast your fails.",
     color: "bg-gray-800/60",
     borderColor: "border-gray-700",
     textColor: "text-white"
@@ -26,43 +36,15 @@ const Features = () => {
           </p>
         </div>
         
-        <div className="flex justify-center mb-16">
-          <img 
-            src="/public/lovable-uploads/e6f4b622-2bd0-4b50-9ddb-da5493ed1610.png" 
-            alt="Mukkad Saala" 
-            className="w-48 h-48 object-contain"
-          />
-        </div>
-        
-        {/* Combined section for Hindi Slang and Positive Reinforcement */}
-        <div className="rounded-3xl p-8 border border-gray-800/50 shadow-lg backdrop-blur-xl bg-gray-900/60 mb-16 max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="space-y-6">
-              <h3 className="text-3xl font-bold text-white">Hindi Slang + Positive Reinforcement</h3>
-              <p className="text-lg text-gray-300">
-                Choose Standard for straightforward nudges or Extreme for the full desi roommate experience. Complete a workout? Receive money? We celebrate wins with the same energy we roast your fails.
-              </p>
-            </div>
-            <div className="flex justify-center">
-              <img 
-                src="/public/lovable-uploads/cdc2bd95-f167-42d0-b007-005bca04b0df.png" 
-                alt="Hindi Slang Examples" 
-                className="w-full max-w-md rounded-2xl shadow-xl"
-              />
-            </div>
-          </div>
+        <div className="flex justify-center mb-16 text-6xl">
+          
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
-          {features.map((feature, index) => (
-            <div 
-              key={index}
-              className="rounded-3xl p-6 md:p-8 border border-gray-800/50 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-xl bg-gray-900/60 h-full"
-            >
+          {features.map((feature, index) => <div key={index} className="rounded-3xl p-6 md:p-8 border border-gray-800/50 shadow-lg hover:-translate-y-1 transition-all duration-300 backdrop-blur-xl bg-gray-900/60 h-full">
               <div className={`w-16 h-16 rounded-2xl ${feature.color} mb-6 mx-auto`}></div>
               <h3 className="text-2xl font-bold text-white text-center">{feature.title}</h3>
-            </div>
-          ))}
+            </div>)}
         </div>
       </div>
     </section>;
