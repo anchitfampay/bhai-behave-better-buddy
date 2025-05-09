@@ -1,7 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
-import { ChevronDown } from 'lucide-react';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -26,21 +25,11 @@ const Navbar = () => {
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          <div className="relative group">
-            <button className="text-white hover:text-gray-300 font-medium transition-colors flex items-center">
-              Features <ChevronDown size={16} className="ml-1" />
-            </button>
-          </div>
-          <a href="#developers" className="text-white hover:text-gray-300 font-medium transition-colors">Developers</a>
-          <div className="relative group">
-            <button className="text-white hover:text-gray-300 font-medium transition-colors flex items-center">
-              Company <ChevronDown size={16} className="ml-1" />
-            </button>
-          </div>
-          <a href="#blog" className="text-white hover:text-gray-300 font-medium transition-colors">Blog</a>
-          <a href="#changelog" className="text-white hover:text-gray-300 font-medium transition-colors">Changelog</a>
+          <a href="#how-it-works" className="text-white hover:text-gray-300 font-medium transition-colors font-poppins">How it Works?</a>
           
-          <Button className="bg-amber-600/80 hover:bg-amber-500 text-white font-semibold px-6 py-2 rounded-lg ml-4">
+          <Button 
+            className="bg-white hover:bg-amber-500 text-black font-semibold px-6 py-2 rounded-lg ml-4 transition-colors font-poppins"
+          >
             Get the app
           </Button>
         </div>
