@@ -43,14 +43,14 @@ const CallToAction = () => {
           <div className="max-w-2xl mx-auto text-center relative z-10">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-foreground/5 text-foreground/70 text-xs font-medium border border-pulse-violet/20 mb-6 gap-2">
               <Zap size={12} className="text-pulse-violet" />
-              <span>NEURAL ACCESS</span>
+              <span>BRUTAL TRUTH</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-black mb-6">Break <span className="gradient-text">Habits</span></h2>
+            <h2 className="text-3xl md:text-4xl font-black mb-6">Face <span className="gradient-text">Reality</span></h2>
             
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <Input
                 type="email"
-                placeholder="Enter neural ID"
+                placeholder="Your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="flex-grow h-12 bg-background/20 backdrop-blur-sm border-pulse-violet/20 placeholder:text-foreground/40"
@@ -62,7 +62,7 @@ const CallToAction = () => {
             </form>
             
             <p className="mt-3 text-xs text-foreground/50">
-              Pure intervention.
+              Truth hurts. Growth follows.
             </p>
           </div>
         </div>

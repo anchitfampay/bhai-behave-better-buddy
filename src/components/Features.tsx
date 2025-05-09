@@ -6,7 +6,7 @@ const Features = () => {
   const features = [
     {
       title: "Truth Pulse",
-      description: "Raw signals.",
+      description: "No filter.",
       icon: MessageCircle,
       color: "from-pulse-violet/20 to-pulse-violet/5",
       borderColor: "border-pulse-violet/20",
@@ -14,7 +14,7 @@ const Features = () => {
     },
     {
       title: "Neural Nudge",
-      description: "Instant correction.",
+      description: "Quick correction.",
       icon: Bell,
       color: "from-ice-blue/20 to-ice-blue/5",
       borderColor: "border-ice-blue/20",
@@ -30,7 +30,7 @@ const Features = () => {
     },
     {
       title: "Visual Matrix",
-      description: "See change.",
+      description: "See truth.",
       icon: Image,
       color: "from-ice-blue/20 to-ice-blue/5",
       borderColor: "border-ice-blue/20",
@@ -45,7 +45,7 @@ const Features = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-black mb-4">Break <span className="gradient-text">Patterns</span></h2>
           <p className="text-lg text-foreground/70 max-w-lg mx-auto">
-            Neural intervention.
+            No sugar coating.
           </p>
         </div>
         

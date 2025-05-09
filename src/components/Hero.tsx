@@ -19,11 +19,11 @@ const Hero = () => {
       <div className="container px-4 md:px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="font-black tracking-tight text-5xl md:text-7xl mb-4 relative">
-            <span className="gradient-text">Bh.ai</span>
+            <span className="gradient-text">Yo Bh.ai</span>
           </h1>
           
-          <h2 className="text-2xl md:text-3xl font-bold mb-10 max-w-xl mx-auto">
-            Neural Intervention
+          <h2 className="text-lg md:text-2xl font-medium mb-10 max-w-xl mx-auto text-foreground/80">
+            your own brutally honest AI
           </h2>
           
           <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
@@ -48,7 +48,7 @@ const Hero = () => {
             <div className="absolute top-10 left-1/2 -translate-x-1/2 w-64 crystal-glow">
               <div className="bg-card/80 backdrop-blur-md border border-pulse-violet/20 p-4 rounded-lg data-pulse">
                 <p className="text-ice-blue text-sm font-semibold">Neural Alert</p>
-                <p className="text-foreground/90 text-xs mt-1">Mind your time.</p>
+                <p className="text-foreground/90 text-xs mt-1">Truth hits hard.</p>
               </div>
             </div>
           </div>

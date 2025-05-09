@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <a href="/" className="flex items-center">
-            <span className="text-2xl font-bold gradient-text">Bh.ai</span>
+            <span className="text-2xl font-bold gradient-text">Yo Bh.ai</span>
           </a>
         </div>
         
@@ -20,7 +20,7 @@ const Navbar = () => {
           <a href="#features" className="text-foreground/80 hover:text-bhai-purple font-medium transition-colors">Features</a>
           <a href="#how-it-works" className="text-foreground/80 hover:text-bhai-purple font-medium transition-colors">How It Works</a>
           <a href="#testimonials" className="text-foreground/80 hover:text-bhai-purple font-medium transition-colors">Testimonials</a>
-          <Button className="btn-gradient">Get Early Access</Button>
+          <Button className="btn-gradient">Early Access</Button>
         </div>
         
         {/* Mobile Menu Button */}
@@ -56,7 +56,7 @@ const Navbar = () => {
             >
               Testimonials
             </a>
-            <Button className="btn-gradient w-full">Get Early Access</Button>
+            <Button className="btn-gradient w-full">Early Access</Button>
           </div>
         </div>
       )}
